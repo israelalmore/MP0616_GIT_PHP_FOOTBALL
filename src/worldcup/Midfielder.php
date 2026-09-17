@@ -8,6 +8,7 @@ namespace WorldCup;
 class Midfielder extends Player {
     private $vision;
 
+
     /**
      * Get the vision
      */
@@ -23,6 +24,6 @@ class Midfielder extends Player {
     }
 
     public function organize() {
-        ech0 "organizing\n"; // En PHP no existe print1n, así que uso echo para que funcione.
+        echo "organizing\n"; // En PHP no existe print1n, así que uso echo para que funcione.
     }
 }
