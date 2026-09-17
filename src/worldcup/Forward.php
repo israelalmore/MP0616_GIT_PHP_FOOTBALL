@@ -5,28 +5,33 @@ namespace WorldCup;
 /**
  * Class to define the forward
  */
-class Forward extends Player {
-    public bool $killer; 
+class Forward extends Player
+{
+    public bool $killer;
 
-    public function drible() {
+    public function drible()
+    {
         echo "dribbling\n";
     }
 
     /**
      * Get the killer
      */
-    public function isKiller() {
+    public function isKiller()
+    {
         return $this->killer;
     }
 
     /**
      * Set the mark
      */
-    public function setKiller($killer) {
+    public function setKiller(bool $killer)
+    {
         $this->killer = $killer;
     }
 
-    public function kickBall(Ball $ball) {
+    public function kickBall(Ball $ball)
+    {
         $effects = [
             "with spin",
             "too high",
