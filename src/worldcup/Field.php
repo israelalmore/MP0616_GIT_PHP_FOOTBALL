@@ -2,29 +2,34 @@
 
 namespace WorldCup;
 
-class Field {
+class Field
+{
 
     private int $size;
 
-    public function __construct($size) {
+    public function __construct(int $size)
+    {
         $this->size = $size;
     }
 
     /**
      * Get the size
      */
-    public function getSize() {
+    public function getSize()
+    {
         return $this->size;
     }
 
     /**
      * Set the size
      */
-    public function setSize($size) {
+    public function setSize(int $size)
+    {
         $this->size = $size;
     }
 
-    public function light() {
+    public function light()
+    {
         echo "switching the lights\n";
     }
 }
