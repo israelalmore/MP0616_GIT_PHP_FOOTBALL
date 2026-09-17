@@ -10,58 +10,48 @@ $game->main();
 /**
  * Class to define the game
  */
-class Game
-{
-    public $field;
-    public $date;
-    public $ball;
-    public $teams;
+class Game {
+    private Field $field;
+    private DateTime $date;
+    private Ball $ball;
+    private array $teams;
 
-    public function getField()
-    {
+    public function getField() {
         return $this->field;
     }
 
-    public function setField($field)
-    {
+    public function setField(Field $field) {
         $this->field = $field;
     }
 
-    public function getDate()
-    {
+    public function getDate() {
         return $this->date;
     }
 
-    public function setDate($date)
-    {
+    public function setDate(DateTime $date) {
         $this->date = $date;
     }
 
-    public function getBall()
-    {
+    public function getBall() {
         return $this->ball;
     }
 
-    public function setBall($ball)
-    {
+    public function setBall(Ball $ball) {
         $this->ball = $ball;
     }
 
-    public function getTeams()
-    {
+    public function getTeams() {
         return $this->teams;
     }
 
-    public function setTeams($teams)
-    {
+    public function setTeams(array $teams) {
         $this->teams = $teams;
     }
 
-    public function main()
-    {
+    public function main() {
         echo "starting application\n";
-
-
+        
+        
         $this->setField(new Field(100));
         $this->setDate(new DateTime());
         $this->setBall(new Ball());
@@ -111,8 +101,7 @@ class Game
     }
 
 
-    public function start()
-    {
+    public function start() {
         echo "starting match actions...\n";
 
         for ($i = 0; $i < 10; $i++) {
@@ -146,4 +135,5 @@ class Game
             }
         }
     }
+    
 }
