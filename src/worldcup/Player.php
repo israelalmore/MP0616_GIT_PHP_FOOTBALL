@@ -2,24 +2,28 @@
 
 namespace WorldCup;
 
-class Player extends Person {
-    private String $position; 
+class Player extends Person
+{
+    private String $position;
 
-    public function passBall() {
+    public function passBall()
+    {
         echo "passing ball\n";
     }
 
     /**
      * Get the position
      */
-    public function getPosition() {
+    public function getPosition()
+    {
         return $this->position;
     }
 
     /**
      * Set the position
      */
-    public function setPosition($position) {
+    public function setPosition(String $position)
+    {
         $this->position = $position;
     }
 }
