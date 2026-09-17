@@ -6,7 +6,7 @@ namespace WorldCup;
  * Class to define the midfielder
  */
 class Midfielder extends Player {
-    private bool $vision;
+    private boolean $vision;
 
 
     /**
@@ -19,7 +19,7 @@ class Midfielder extends Player {
     /**
      * Set the vision
      */
-    public function setVision(bool $vision) {
+    public function setVision($vision) {
         $this->vision = $vision;
     }
 
