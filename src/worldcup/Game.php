@@ -11,16 +11,16 @@ $game->main();
  * Class to define the game
  */
 class Game {
-    public $field;
-    public $date;
-    public $ball;
-    public $teams;
+    private Field $field;
+    private DateTime $date;
+    private Ball $ball;
+    private array $teams;
 
     public function getField() {
         return $this->field;
     }
 
-    public function setField($field) {
+    public function setField(Field $field) {
         $this->field = $field;
     }
 
@@ -28,7 +28,7 @@ class Game {
         return $this->date;
     }
 
-    public function setDate($date) {
+    public function setDate(DateTime $date) {
         $this->date = $date;
     }
 
@@ -36,7 +36,7 @@ class Game {
         return $this->ball;
     }
 
-    public function setBall($ball) {
+    public function setBall(Ball $ball) {
         $this->ball = $ball;
     }
 
@@ -44,7 +44,7 @@ class Game {
         return $this->teams;
     }
 
-    public function setTeams($teams) {
+    public function setTeams(array $teams) {
         $this->teams = $teams;
     }
 
