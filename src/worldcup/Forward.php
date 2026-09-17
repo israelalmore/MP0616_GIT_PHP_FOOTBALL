@@ -6,7 +6,7 @@ namespace WorldCup;
  * Class to define the forward
  */
 class Forward extends Player {
-    public bool $killer; 
+    public $killer; 
 
     public function drible() {
         echo "dribbling\n";
