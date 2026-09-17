@@ -21,4 +21,9 @@ class Ball
     {
         $this->material = $material;
     }
+
+    public function move()
+    {
+        echo "Ball moving";
+    }
 }
