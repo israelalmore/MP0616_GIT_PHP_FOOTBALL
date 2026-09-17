@@ -10,7 +10,7 @@ class Midfielder extends Player {
 
 
     /**
-     * Get the vision
+     * Get the visions
      */
     public function isVision() {
         return $this->vision;
