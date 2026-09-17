@@ -6,9 +6,9 @@ namespace WorldCup;
  * Class to define the team
  */
 class Team {
-    public $name;
-    public $coach;
-    public $players; // array of Player objects
+    public String $name;
+    public Coach $coach;
+    public array $players; // array of Player objects
 
     public function __construct($name) {
         $this->name = $name;
