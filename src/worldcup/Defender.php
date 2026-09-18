@@ -3,7 +3,7 @@
 namespace WorldCup;
 
 class Defender {
-    public $mark;
+    public bool $mark;
 
     public function steal(Ball $ball) {
         $effects = ["with fault", "without fault"];
@@ -21,7 +21,7 @@ class Defender {
     /**
      * Set the mark
      */
-    public function setMark($mark) {
+    public function setMark(bool $mark) {
         $this->mark = $mark;
     }
 }
