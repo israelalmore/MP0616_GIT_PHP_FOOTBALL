@@ -19,7 +19,7 @@ class Coach extends Person {
     /**
      * Set the style
      */
-    public function setStyle($style) {
+    public function setStyle(String $style) {
         $this->style = $style;
     }
 }
