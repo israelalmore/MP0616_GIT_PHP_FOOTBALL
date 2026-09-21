@@ -130,5 +130,11 @@ class Game {
             }
         }
     }
-    
+
+    private function buildTeam(String $name, array $players) {
+        $team = new Team($name);
+        $team->setPlayers($players);
+        $team->setCoach(new Coach());
+        return $team;
+    }
 }
