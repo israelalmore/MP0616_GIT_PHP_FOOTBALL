@@ -52,7 +52,7 @@ class Game {
         echo "starting application\n";
         
         
-        $this->setField(new Field(100));
+        $this->setField(new Field(110));
         $this->setDate(new DateTime());
         $this->setBall(new Ball());
 
@@ -84,17 +84,16 @@ class Game {
         $listB[] = new Forward();
         $listB[] = new Forward();
 
-        $teamA = new Team("NewTeam");
-        $teamA->setPlayers($listA);
+        $teamA = new Team("Argentina");
         $teamA->setCoach(new Coach());
+        $teamA->setPlayers($listA);
 
-        $teamB = new Team("Maped");
-        $teamB->setPlayers($listB);
+        $teamB = new Team("France");
         $teamB->setCoach(new Coach());
+        $teamB->setPlayers($listB);
 
         $teams = [];
-        $teams[] = $teamA;
-        $teams[] = $teamB;
+        array_push($teams, $teamA, $teamB);
         $this->setTeams($teams);
 
         $this->start();
